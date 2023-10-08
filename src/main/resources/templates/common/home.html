@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>BOOY</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<div th:insert="~{common/header :: header}"></div>
+
+<!--main page-->
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <!--video insert-->
+            <video autoplay muted loop>
+            <!--<source src="/video/Runaway.mp4"></src>-->
+            </video>
+            <div class="banner-text">
+                <h2>BOOY</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div th:insert="~{common/footer :: footer}"></div>
+</body>
+</html>
